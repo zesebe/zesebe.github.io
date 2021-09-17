@@ -271,6 +271,15 @@ p > img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
 
   @include mobile {
     text-align: center;
@@ -331,13 +340,11 @@ p > img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
     display: block;
     font-size: 16px;
   }
